@@ -132,6 +132,9 @@ select:focus,
 	box-shadow: none;
 	border: .1rem solid rgba(0, 0, 0, 0.1);
 }
+img{
+	max-width: 100%;
+}
 h1{
 	font-size: 4rem;
 	font-weight: 600;
@@ -143,29 +146,34 @@ h2{
 	font-weight: 600;
 	line-height: 1.1;
 	color: var(--text2);
+	text-transform: capitalize;
 }
 h3{
 	font-size: 2.4rem;
 	font-weight: 700;
 	line-height: 1.5;
 	color: var(--text2);
+	text-transform: capitalize;
 }
 h4{
 	font-size: 2.4rem;
 	font-weight: 700;
 	line-height: 1.5;
 	color: var(--text1);
+	text-transform: capitalize;
 }
 h5{
 	font-size: 2.2rem;
 	font-weight: 600;
 	line-height: 1.1;
 	color: var(--text2);
+	text-transform: capitalize;
 }
 h6{
 	font-size: 1.8rem;
 	font-weight: 500;
 	color: var(--text2);
+	text-transform: capitalize;
 }
 .sec_pad{
 	padding: 10rem 0;
@@ -194,6 +202,7 @@ main {
 	font-size: 1.8rem;
 	font-weight: 600;
 	line-height: 1;
+	text-transform: capitalize;
 }
 .common_btn:hover{
 	background-color: var(--text3);
@@ -1112,9 +1121,103 @@ a.back-to-top:hover{
 	margin-top: 1.6rem;
 	margin-bottom: 2.4rem;
 }
-.announcement .announcement_date{
+.announcement_date{
 	font-size: 2.4rem;
 	margin-bottom: 1.2rem;
 	margin-top: 0;
 	color: var(--text);
+}
+
+/* ================================
+	announcement detail page
+===================================*/
+.announcement_detail .section_title a{
+	color: inherit;
+}
+.announcement_detail_box{
+	border-radius: 2.4rem;
+	padding: 1.6rem;
+	background-color: var(--white);
+}
+.announcement_detail_box img{
+	border-radius: 1.2rem;
+	width: 100%;
+}
+.announcement_detail_content{
+	padding: 1.6rem;
+	margin-top: .4rem;
+	padding-bottom: 0;
+}
+.announcement_detail_content h2{
+	font-weight: 700;
+	line-height: 1.5;
+	margin-top: 1.6rem;
+}
+.announcement_detail_content p{
+	margin-top: 1.6rem;
+	color: #9C9BA4;
+}
+.announcement_detail_content h3{
+	color: #9C9BA4;
+	margin-top: 2.4rem;
+}
+.detail_cta{
+	padding: 2.4rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top right;
+	border-radius: 2.4rem;
+	margin: 3.2rem 0;
+}
+.detail_cta h6{
+	max-width: 54rem;
+	color: var(--white);
+	line-height: 1.5;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 1.6rem;
+	text-shadow: 0rem .6rem .8rem rgba(0, 0, 0, 0.35);
+}
+.detail_cta .common_btn{
+	color: var(--white);
+	border-color: var(--white);
+	padding: 1rem 2.4rem;
+}
+.announcement_detail_content ul {
+    margin-top: 1.6rem;
+    list-style: disc;
+    color: #9C9BA4;
+    padding-left: 3rem;
+}
+.announcement_detail_content ul li{
+	margin-bottom: .8rem;
+}
+.announcement_detail_side{
+	background-color: var(--white);
+	border-radius: 2.4rem;
+	padding: 1.6rem 1.2rem;
+}
+.announcement_detail_side h4{
+	margin-bottom: 1.6rem;
+}
+.announcement_detail_side>div{
+	margin-bottom: 2.4rem;
+}
+.announcement_detail_side>div:last-child{
+	margin-bottom: 0;
+}
+.announcement_detail_side img{
+	border-radius: 1.2rem;
+	width: 100%;
+}
+.announcement_detail_side p{
+	margin-top: 1.6rem;
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+.announcement_detail_side h6{
+	line-height: 1.5;
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: var(--text2);
 }
