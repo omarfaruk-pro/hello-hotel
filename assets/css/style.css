@@ -89,12 +89,48 @@ a:hover{
 	color: #0e00a2 !important;
 	text-decoration: none;
 }
+form label{
+	color: #9D9D9D;
+	margin-bottom: .8rem;
+	font-size: 1.8rem;
+}
+input,select,textarea,.form-control{
+	border: .1rem solid rgba(0, 0, 0, 0.1);
+	border-radius: 1.2rem;
+	padding: 1.8rem;
+	font-size: 1.8rem;
+	margin-bottom: 2.4rem;
+}
+.nice-select {
+	border: .1rem solid rgba(0, 0, 0, 0.1);
+    font-size: 1.8rem;
+    height: auto;
+    line-height: 1;
+    padding: 1.8rem;
+    border-radius: 1.2rem;
+	margin-bottom: 2.4rem;
+}
+.nice-select:focus{
+	border: .1rem solid rgba(0, 0, 0, 0.1);
+}
+.nice-select::after{
+	right: 2.4rem;
+}
+::-webkit-resizer{
+	display: none;
+}
+::placeholder{
+	font-size: 1.8rem;
+}
 button:focus,
 a:focus,
 input:focus,
 textarea:focus,
-select:focus{
+select:focus,
+.form-control:focus{
 	outline: none;
+	box-shadow: none;
+	border: .1rem solid rgba(0, 0, 0, 0.1);
 }
 h1{
 	font-size: 4rem;
@@ -698,6 +734,9 @@ a.back-to-top:hover{
 	padding-top: 2.4rem;
 	border-top: .1rem solid #CCCCCC;
 }
+.promo_det_box.location_box p{
+	margin-top: .8rem;
+}
 .promo_det_box.location_box a{
 	font-weight: 500;
 	text-transform: capitalize;
@@ -919,3 +958,125 @@ a.back-to-top:hover{
 .point_balance_box.available_balance h4{
 	color: #121212;
 }
+
+/* ================================
+	contact us page
+===================================*/
+.contact_us .section_title h2 a{
+	color: inherit;
+}
+.contact_us_row{
+	background-color: var(--white);
+	border-radius: 2.4rem;
+	padding: 4rem;
+}
+.contact_form{
+	padding-right: 2.4rem;
+}
+.contact_form form button{
+	margin-top: 1.6rem;
+	padding-top: 2.3rem;
+	padding-bottom: 2.3rem;
+}
+.contact_form h6{
+	font-size: 2rem;
+	font-weight: 500;
+	color: #121212;
+	line-height: 1.5;
+}
+.contact_form form{
+	margin-top: 2.4rem;
+}
+.contact_info_area{
+	padding-left: 4rem;
+}
+.contact_info_area h5{
+	font-size: 2.4rem;
+	line-height: 1.25;
+	color: #121212;
+	display: inline-block;
+	border-bottom: .1rem solid #DEDAFA;
+	padding-bottom: 1.2rem;
+}
+.contact_info{
+	margin-top: 4.8rem;
+}
+.contact_info>div{
+	margin-bottom: 4.8rem;
+	display: flex;
+	column-gap: 1.2rem;
+	align-items: center;
+}
+.contact_info i{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 6.4rem;
+	width: 6.4rem;
+	border-radius: 50%;
+	background-color: rgba(67, 53, 222, 0.07);
+	color: var(--primary);
+	font-size: 2.4rem;
+}
+.contact_info i.fa-phone{
+	transform: rotate(90deg);
+}
+.contact_info p{
+	font-size: 1.8rem;
+	margin-bottom: .8rem;
+}
+.contact_info a{
+	font-size: 2rem;
+	line-height: 1.5;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: 500;
+}
+.contact_info h6{
+	font-size: 2rem;
+	line-height: 1.5;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: 500;
+}
+.social_follow{
+	display: flex;
+	justify-content: space-between;
+}
+.social_follow p{
+	color: #8C8B9C;
+	position: relative;
+}
+.social_follow p span{
+	display: inline-block;
+	height: .1rem;
+	width: 10rem;
+	background-color: #8C8B9C;
+	position: absolute;
+	top: 50%;
+	margin-left: .8rem;
+}
+.social_follow>div{
+	display: flex;
+	column-gap: 1.6rem;
+}
+.social_follow a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2.1rem;
+	width: 2.1rem;
+	background-color: #8C8B9C;
+	border-radius: 50%;
+}
+.social_follow a img{
+	width: 1.2rem;
+}
+.social_follow a img.facebook_icon{
+	width: .8rem;
+}
+.social_follow a:hover{
+	background-color: var(--black);
+}
+
+/* ================================
+	announcement listing page
+===================================*/
