@@ -197,7 +197,7 @@ main {
 }
 .common_btn:hover{
 	background-color: var(--text3);
-	color: var(--white);
+	color: var(--white) !important;
 	border-color: var(--text3);
 }
 .common_btn_2{
@@ -214,7 +214,7 @@ main {
 }
 .common_btn_2:hover{
 	background-color: transparent;
-	color: var(--primary);
+	color: var(--primary) !important;
 	border-color: var(--primary);
 }
 /* page loader  */
@@ -1080,3 +1080,41 @@ a.back-to-top:hover{
 /* ================================
 	announcement listing page
 ===================================*/
+.announcement_box{
+	background-color: var(--white);
+	padding: 2.4rem;
+	border-radius: 2.4rem;
+}
+.announcement{
+	display: flex;
+	column-gap: 2.4rem;
+	align-items: center;
+	padding: 3.2rem 0;
+	border-bottom: .1rem solid var(--text9);
+}
+.announcement:first-child{
+	padding-top: 0;
+}
+.announcement:last-child{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.announcement img{
+	width: 34.5rem;
+	border-radius: 1.2rem;
+}
+.announcement h2{
+	font-weight: 700;
+	line-height: 1.5;
+}
+.announcement p{
+	color: #9C9BA4;
+	margin-top: 1.6rem;
+	margin-bottom: 2.4rem;
+}
+.announcement .announcement_date{
+	font-size: 2.4rem;
+	margin-bottom: 1.2rem;
+	margin-top: 0;
+	color: var(--text);
+}
